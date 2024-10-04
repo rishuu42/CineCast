@@ -12,6 +12,9 @@ const PORT = process.env.PORT || 3000;
 
 // Setting up the http server
 const app = express();  
+app.get('/', (req, res) => {
+  res.send('Welcome to CineCast!');
+});
 const server = require('http').createServer(app);  
 
 // Setting up socket connection with incoming request from http://localhost:8000" (client server) socket.io 
