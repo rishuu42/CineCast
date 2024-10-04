@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname,"./public")));
 
 // Serving mainPage from static folder
 app.get('/',function(req,res){
-    res.sendFile("index.html");
+    res.sendFile("./public/index.html");
 })
 
 // Video is playing
