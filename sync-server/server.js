@@ -8,7 +8,7 @@ const {makeid} = require('./utils/utils');
 
 // Stores data about all the rooms
 const rooms = [];
-const PORT = 3000
+const PORT = process.env.PORT || 3000;
 
 // Setting up the http server
 const app = express();  
@@ -17,7 +17,7 @@ const server = require('http').createServer(app);
 // Setting up socket connection with incoming request from http://localhost:8000" (client server) socket.io 
 const io = require("socket.io")(server, {
     cors: {
-      origin: "http://localhost:8000",
+      origin: "*",
       methods: ["GET", "POST"]
     }
 });
