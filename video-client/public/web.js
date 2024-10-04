@@ -3,10 +3,10 @@
 // Deploy links: 
 let herokuLink = "https://synchronization-testing-server.herokuapp.com/"; 
 
-let localDeploy = "https://cinecast.onrender.com";
+let renderLink = "https://cinecast.onrender.com";
 
 // Linking to socket conecction
-var socket = io.connect(localDeploy , {
+var socket = io.connect(renderLink , {
     reconnection: true
 });
 
