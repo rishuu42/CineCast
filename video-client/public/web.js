@@ -3,7 +3,7 @@
 // Deploy links: 
 let herokuLink = "https://synchronization-testing-server.herokuapp.com/"; 
 
-let localDeploy = "http://localhost:3000/";
+let localDeploy = "https://cinecast.onrender.com";
 
 // Linking to socket conecction
 var socket = io.connect(localDeploy , {
